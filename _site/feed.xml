@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
+    <title>The Classic Yuppie on Github</title>
     <description>Tech evangelist and blogger. Mac enthusiast. I crave delicious design. Never fear being wrong.
 </description>
     <link>http://classicyuppie.github.io/</link>
     <atom:link href="http://classicyuppie.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Sep 2015 22:29:30 -0400</pubDate>
-    <lastBuildDate>Sat, 19 Sep 2015 22:29:30 -0400</lastBuildDate>
+    <pubDate>Sat, 19 Sep 2015 23:21:21 -0400</pubDate>
+    <lastBuildDate>Sat, 19 Sep 2015 23:21:21 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
