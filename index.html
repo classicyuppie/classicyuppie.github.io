@@ -1,23 +1,70 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+  <title>John Fox: My Digital Life</title>
+  <style type="text/css">
+  @import url("//fonts.googleapis.com/css?family=Roboto:100");
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+  }
+  p {
+    color: #ffffff;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 42px;
+    line-height: 56px;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+  }
+  p a {
+      color: #7bbaf7;
+      text-decoration: none;
+      transition: all 0.2s;
+  }
+  p a:hover,
+  p a:focus {
+      text-decoration: underline;
+  }
+  .wrapper > div {
+    display: block;
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+  }
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+  @media only screen and (max-width: 767px) {
+    .wrapper > div {
+      max-width: 90%;
+    }
+  }
+  @media screen and (max-device-width: 800px) {
+    html { background: #000 no-repeat center center fixed; }
+    #bgvid { display: none; }
+  }
+  </style>
+</head>
+<body>
+  <section class="wrapper">
+    <div>
+    <p>My name is <a href="http://classicyuppie.com">John Fox</a>, and this is my connected life.</p>
+    <p>My life includes writing my thoughts <a href="http://classicyuppie.com">here</a>, being social <a href="http://twitter.com/classicyuppie/">here</a>, posting photos <a href="http://instagram.com/classicyuppie">here</a>.</p>
+    <p>I help maintain this website <a href="https://xfinity.com/experience">this</a>, I'm the former co-founder of <a href="http://indygeekarchive.com">this</a>, and I've been known to contribute to a project or two <a href="https://github.com/classicyuppie">here</a>.</p>
+    </div>
+  </section>
+</body>
+</html>
