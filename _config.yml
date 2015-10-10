@@ -10,3 +10,6 @@ github_username:  classicyuppie
 
 # Build settings
 markdown: kramdown
+
+highlighter: pygments
+github: [Repository metadata]
