@@ -2,20 +2,41 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
+
 body {
-  background-color: #efefef;
+  background-color: #606060;
   margin: 0;
   padding: 0;
 }
+
 .wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: #606060;
 }
+
+.wrapper > div {
+  display: block;
+  width: auto;
+  max-width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+h6 {
+  color: #ffffff;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 56px;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
 p {
   color: #ffffff;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,6 +46,7 @@ p {
   margin: 0 0 0.5em 0;
   padding: 0;
 }
+
 p a {
     color: #7bbaf7;
     text-decoration: none;
@@ -34,20 +56,14 @@ p a:hover,
 p a:focus {
     text-decoration: underline;
 }
-.wrapper > div {
-  display: block;
-  width: auto;
-  max-width: 50%;
-  height: auto;
-  margin: auto;
-}
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 760px) {
   .wrapper > div {
     max-width: 90%;
+    background-color: #606060;
   }
 }
-@media screen and (max-device-width: 800px) {
-  html { background: #000 no-repeat center center fixed; }
-  #bgvid { display: none; }
+
+@media screen and (max-device-width: 1024px) {
+  html { no-repeat center center fixed; }
 }
